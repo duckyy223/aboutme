@@ -11,6 +11,11 @@ const projects = {
         title: 'Guess The Geometry Song!',
         desc: 'You get the first second of the song from a popular Geometry Dash level, and you have to guess the level.',
         url: 'https://guessthegdsong.xo.je/'
+    },
+    'duckblox': {
+        title: 'DuckBlox',
+        desc: 'Roblox revival project.',
+        url: 'https://dc.duckbx.fun'
     }
 };
 

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ducky</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%23000'/><text x='50' y='66' font-size='50' text-anchor='middle' fill='%23fff'>D</text></svg>">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <div class="nav-logo">ducky</div>
+        <ul class="nav-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#links">Links</a></li>
+            <li><a href="#projects">Projects</a></li>
+        </ul>
+    </nav>
+
+    <section id="hero">
+        <div class="section-content">
+            <h1 class="hero-title">Hey, I'm ducky</h1>
+            <p class="hero-sub">
+                i love ducks :)
+            </p>
+            <div class="hero-stack">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>PHP</span>
+                <span>MySQL</span>
+                <span>Git</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="links">
+        <div class="section-content">
+            <p class="section-label">Connect</p>
+            <div class="links-grid">
+                <a href="https://discord.com/users/1108092898924302418" target="_blank" class="link-card">
+                    <div class="lc-info">
+                        <div class="lc-name">Discord</div>
+                        <div class="lc-desc">duckyducky_1</div>
+                    </div>
+                    <span class="lc-arrow">↗</span>
+                </a>
+
+                <a href="https://dc.duckbx.fun" target="_blank" class="link-card">
+                    <div class="lc-info">
+                        <div class="lc-name">DuckBlox</div>
+                        <div class="lc-desc">Roblox revival project</div>
+                    </div>
+                    <span class="lc-arrow">↗</span>
+                </a>
+
+                <a href="https://steamcommunity.com/id/duckyonhd" target="_blank" class="link-card">
+                    <div class="lc-info">
+                        <div class="lc-name">Steam</div>
+                        <div class="lc-desc">duckyonhd</div>
+                    </div>
+                    <span class="lc-arrow">↗</span>
+                </a>
+
+                <a href="https://github.com/duckyy223" target="_blank" class="link-card">
+                    <div class="lc-info">
+                        <div class="lc-name">GitHub</div>
+                        <div class="lc-desc">duckyy223</div>
+                    </div>
+                    <span class="lc-arrow">↗</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="section-content">
+            <p class="section-label">Projects</p>
+            <div class="projects-grid">
+                <div class="project-card" onclick="openProject('guess-the-geometry')">
+                    <div class="pc-info">
+                        <div class="pc-name">Guess The Geometry Song!</div>
+                        <div class="pc-hint">Click for details</div>
+                    </div>
+                    <span class="pc-arrow">→</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <a href="#">ducky</a> &mdash; 2026
+    </footer>
+
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal">
+            <button class="modal-close" onclick="closeProject()">&#10005;</button>
+            <div class="modal-badge">Project</div>
+            <div class="modal-title" id="modalTitle">-</div>
+            <div class="modal-desc" id="modalDesc">-</div>
+            <div class="modal-actions">
+                <a class="modal-btn" id="modalBtn" href="#" target="_blank">
+                    Open Project &rarr;
+                </a>
+                <button class="modal-btn-secondary" onclick="closeProject()">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
